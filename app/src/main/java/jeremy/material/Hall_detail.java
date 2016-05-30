@@ -274,7 +274,7 @@ public class Hall_detail extends ActionBarActivity {
         while(cursor.moveToNext()){
             image1 = cursor.getString(cursor.getColumnIndex("image"));
             share_WeChat = "Hi! I want to sell "+cursor.getString(cursor.getColumnIndex("itemname"))+" with "+cursor.getString(cursor.getColumnIndex("price"))
-                            +"SEK. Please contact: "+cursor.getString(cursor.getColumnIndex("email"))+".";
+                            +" SEK. Please contact: "+cursor.getString(cursor.getColumnIndex("email"))+".";
         }
 
         WXMediaMessage msg = new WXMediaMessage(webpage);
@@ -291,8 +291,8 @@ public class Hall_detail extends ActionBarActivity {
         req.message = msg;
         req.scene = SendMessageToWX.Req.WXSceneTimeline;
         api.sendReq(req);
-        Toast.makeText(this,String.valueOf(api.sendReq(req)),Toast.LENGTH_LONG).show();
-
+        //Toast.makeText(this,String.valueOf(api.sendReq(req)),Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Ready to share",Toast.LENGTH_LONG).show();
 
     }
 }
