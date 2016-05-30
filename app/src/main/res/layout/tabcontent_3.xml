@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:id="@+id/scrollView3">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textSize="30dp"
+        android:text="Welcome,all stuff here " />
+    <!--ListView
+        android:id="@+id/list_items2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        android:dividerHeight="1dip" /-->
+
+
+
+    <ExpandableListView
+    android:id="@+id/ExpandableListView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:childDivider="#c8c7cc"
+    android:divider="@null"
+    android:dividerHeight="1px"
+    android:groupIndicator="@null"
+    android:listSelector="#00000000"
+    android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_edit"
+            android:hint="Input item name to search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/search_image" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_image"
+            android:background="@drawable/search"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/spinner4" />
+
+        <Spinner
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/search_edit" />
+
+    </RelativeLayout>
+
+    <!--/ExpandableListView-->
+</LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

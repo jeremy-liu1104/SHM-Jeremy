@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="#E0E0E0"
+        android:textColor="#454545"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="A"/>
+
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:text="SAMPLE HERE"
+            android:paddingTop="6dip"
+            android:textColor="#000000"
+            android:textSize="18dip"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/image" />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="6dip"
+            android:paddingTop="6dip"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/text_id" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:maxLines="2"
+            android:paddingRight="20dip"
+            android:textColor="#000000"
+            android:layout_alignStart="@+id/text_contact"
+            android:layout_below="@+id/text_contact"
+            android:layout_toStartOf="@+id/type" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IN:"
+            android:id="@+id/text_id"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_click"
+            android:background="@drawable/ic_right"
+            android:layout_above="@+id/date"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="From:"
+            android:id="@+id/text_contact"
+            android:layout_below="@+id/itemname"
+            android:layout_alignStart="@+id/itemname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Price:"
+            android:textColor="#DC143C"
+            android:id="@+id/text_price"
+            android:layout_marginEnd="63dp"
+            android:layout_below="@+id/itemname"
+            android:layout_toStartOf="@+id/image_click" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Title:"
+            android:id="@+id/type"
+            android:layout_alignTop="@+id/date"
+            android:layout_alignStart="@+id/text_price" />
+
+    </RelativeLayout>
+
+</LinearLayout>
